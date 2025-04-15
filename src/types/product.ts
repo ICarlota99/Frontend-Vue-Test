@@ -9,14 +9,25 @@ export interface Product {
   isNew: boolean
   discountPercentage?: number
   store: string
+  brand: string
+  addedDate: string
+}
+
+// Variation with image and stock info
+export interface ProductVariation {
+  name: string
+  inStock: boolean
+  image: string
 }
 
 // Extended product details interface
 export interface ProductDetail extends Product {
-  brand: string
   description: string
-  variations: {
-    name: string
-    inStock: boolean
-  }[]
+  variations: ProductVariation[]
+  categoryIds: string[]
+}
+
+export interface Category {
+  id: string
+  name: string
 }
