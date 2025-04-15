@@ -3,6 +3,7 @@ import { useRoute } from 'vue-router'
 import { onMounted } from 'vue'
 import { useProductStore } from '@/store/productStore'
 import ProductDetail from '@/components/ProductDetail.vue'
+import DetailSkeleton from '@/components/DetailSkeleton.vue'
 
 const route = useRoute()
 const store = useProductStore()
@@ -13,13 +14,13 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="p-6 xl:px-32">
+  <div class="p-6 xl:px-32 bg-gray-50">
     <ProductDetail 
       v-if="store.productDetails" 
       :product="store.productDetails" 
     />
     <div v-else class="text-center py-10">
-      Loading product details...
+      <DetailSkeleton />
     </div>
   </div>
 </template>
