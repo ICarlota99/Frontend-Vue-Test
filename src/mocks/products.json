@@ -1,4 +1,5 @@
-[
+{
+  "products": [
     {
       "id": "1",
       "name": "Helado Ikoko (4Lt)",
@@ -10,11 +11,12 @@
       "discountPercentage": 29,
       "store": "Mercadito TSO",
       "brand": "Ikoko",
-      "description": "Sumérgete en un placer cremoso con nuestro helado Ikoko. Deliciosamente rico y perfectamente suave, es el capricho perfecto para satisfacer tus antojos dulces. Disfruta de cada cucharada.",
+      "description": "Sumérgete en un placer cremoso con nuestro helado Ikoko...",
+      "categoryIds": ["cat-1", "cat-5"],
+      "addedDate": "2025-04-01",
       "variations": [
-        { "name": "Chocolate", "inStock": true },
-        { "name": "Fresa", "inStock": true },
-        { "name": "Vainilla", "inStock": false }
+        {"name": "Chocolate", "inStock": true, "image": "/products/ice-cream.webp"},
+        {"name": "Fresa", "inStock": true, "image": "/products/ice-cream.webp"}
       ]
     },
     {
@@ -26,125 +28,177 @@
       "freeShipping": false,
       "isNew": false,
       "discountPercentage": 17,
-      "description": "Frijoles negros cubanos de la mejor calidad. Con un sabor que hará vibrar todos los rincones de tu casa",
+      "store": "Mercadito TSO",
+      "brand": "Ikoko",
+      "description": "Frijoles negros cubanos de la mejor calidad...",
+      "categoryIds": ["cat-1", "cat-8"],
+      "addedDate": "2025-03-28",
       "variations": [
-        { "name": "Pequeño: 4.4Lb.", "inStock": true },
-        { "name": "Mediano: 8.8Lb.", "inStock": true },
-        { "name": "Grande", "inStock": false }
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "/products/beans.jpg"}
       ]
     },
     {
       "id": "3",
-      "name": "Paquete grande de frijoles negros limpios.",
+      "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
       "image": "/products/beans.jpg",
-      "actualPrice": 8.99,
-      "originalPrice": 11.99,
-      "freeShipping": true,
-      "isNew": true,
-      "discountPercentage": 25,
-      "description": "Frijoles negros cubanos de la mejor calidad. Con un sabor que hará vibrar todos los rincones de tu casa",
+      "actualPrice": 7.5,
+      "originalPrice": 9.0,
+      "freeShipping": false,
+      "isNew": false,
+      "discountPercentage": 17,
+      "store": "Mercadito TSO",
+      "brand": "Ikoko",
+      "description": "Frijoles negros cubanos de la mejor calidad...",
+      "categoryIds": ["cat-1", "cat-8"],
+      "addedDate": "2025-03-28",
       "variations": [
-        { "name": "Pequeño: 4.4Lb.", "inStock": true },
-        { "name": "Mediano: 8.8Lb.", "inStock": true },
-        { "name": "Grande", "inStock": false }
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "/products/beans.jpg"}
       ]
     },
     {
       "id": "4",
-      "name": "Paquete grande de frijoles negros limpios.",
+      "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
       "image": "/products/beans.jpg",
-      "actualPrice": 12.5,
-      "originalPrice": 14.5,
+      "actualPrice": 7.5,
+      "originalPrice": 9.0,
       "freeShipping": false,
-      "isNew": true,
-      "discountPercentage": 14,
-      "description": "Frijoles negros cubanos de la mejor calidad. Con un sabor que hará vibrar todos los rincones de tu casa"
+      "isNew": false,
+      "discountPercentage": 17,
+      "store": "Mercadito TSO",
+      "brand": "Ikoko",
+      "description": "Frijoles negros cubanos de la mejor calidad...",
+      "categoryIds": ["cat-1", "cat-8"],
+      "addedDate": "2025-03-28",
+      "variations": [
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "/products/beans.jpg"}
+      ]
     },
     {
       "id": "5",
-      "name": "Paquete grande de frijoles negros limpios.",
+      "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
       "image": "/products/beans.jpg",
-      "actualPrice": 6.75,
-      "originalPrice": 8.0,
-      "freeShipping": true,
+      "actualPrice": 7.5,
+      "originalPrice": 9.0,
+      "freeShipping": false,
       "isNew": false,
-      "discountPercentage": 16,
-      "description": "Frijoles negros cubanos de la mejor calidad. Con un sabor que hará vibrar todos los rincones de tu casa"
+      "discountPercentage": 17,
+      "store": "Mercadito TSO",
+      "brand": "Ikoko",
+      "description": "Frijoles negros cubanos de la mejor calidad...",
+      "categoryIds": ["cat-1", "cat-8"],
+      "addedDate": "2025-03-28",
+      "variations": [
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "/products/beans.jpg"}
+      ]
     },
     {
       "id": "6",
-      "name": "Paquete grande de frijoles negros limpios.",
+      "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
       "image": "/products/beans.jpg",
-      "actualPrice": 5.25,
-      "originalPrice": 6.5,
-      "freeShipping": true,
-      "isNew": true,
-      "discountPercentage": 19,
-      "description": "Frijoles negros cubanos de la mejor calidad. Con un sabor que hará vibrar todos los rincones de tu casa",
+      "actualPrice": 7.5,
+      "originalPrice": 9.0,
+      "freeShipping": false,
+      "isNew": false,
+      "discountPercentage": 17,
+      "store": "Mercadito TSO",
+      "brand": "Ikoko",
+      "description": "Frijoles negros cubanos de la mejor calidad...",
+      "categoryIds": ["cat-1", "cat-8"],
+      "addedDate": "2025-03-28",
       "variations": [
-        { "name": "Pequeño: 4.4Lb.", "inStock": true },
-        { "name": "Mediano: 8.8Lb.", "inStock": true },
-        { "name": "Grande", "inStock": false }
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "/products/beans.jpg"}
       ]
     },
     {
       "id": "7",
-      "name": "Paquete grande de frijoles negros limpios.",
+      "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
       "image": "/products/beans.jpg",
-      "actualPrice": 2.5,
-      "originalPrice": 3.5,
+      "actualPrice": 7.5,
+      "originalPrice": 9.0,
       "freeShipping": false,
       "isNew": false,
-      "discountPercentage": 29,
-      "description": "Moist muffin loaded with fresh blueberries."
+      "discountPercentage": 17,
+      "store": "Mercadito TSO",
+      "brand": "Ikoko",
+      "description": "Frijoles negros cubanos de la mejor calidad...",
+      "categoryIds": ["cat-1", "cat-8"],
+      "addedDate": "2025-03-28",
+      "variations": [
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "/products/beans.jpg"}
+      ]
     },
     {
       "id": "8",
-      "name": "Paquete grande de frijoles negros limpios.",
+      "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
       "image": "/products/beans.jpg",
-      "actualPrice": 4.5,
-      "originalPrice": 6.0,
-      "freeShipping": true,
-      "isNew": true,
-      "discountPercentage": 25,
-      "description": "Classic vanilla ice cream for a timeless dessert.",
+      "actualPrice": 7.5,
+      "originalPrice": 9.0,
+      "freeShipping": false,
+      "isNew": false,
+      "discountPercentage": 17,
+      "store": "Mercadito TSO",
+      "brand": "Ikoko",
+      "description": "Frijoles negros cubanos de la mejor calidad...",
+      "categoryIds": ["cat-1", "cat-8"],
+      "addedDate": "2025-03-28",
       "variations": [
-        { "name": "Pequeño: 4.4Lb.", "inStock": true },
-        { "name": "Mediano: 8.8Lb.", "inStock": true },
-        { "name": "Grande", "inStock": false }
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "/products/beans.jpg"}
       ]
     },
     {
       "id": "9",
-      "name": "Paquete grande de frijoles negros limpios.",
+      "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
       "image": "/products/beans.jpg",
-      "actualPrice": 5.25,
-      "originalPrice": 6.5,
-      "freeShipping": true,
-      "isNew": true,
-      "discountPercentage": 19,
-      "description": "Frijoles negros cubanos de la mejor calidad. Con un sabor que hará vibrar todos los rincones de tu casa",
+      "actualPrice": 7.5,
+      "originalPrice": 9.0,
+      "freeShipping": false,
+      "isNew": false,
+      "discountPercentage": 17,
+      "store": "Mercadito TSO",
+      "brand": "Ikoko",
+      "description": "Frijoles negros cubanos de la mejor calidad...",
+      "categoryIds": ["cat-1", "cat-8"],
+      "addedDate": "2025-03-28",
       "variations": [
-        { "name": "Pequeño: 4.4Lb.", "inStock": true },
-        { "name": "Mediano: 8.8Lb.", "inStock": true },
-        { "name": "Grande", "inStock": false }
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "/products/beans.jpg"}
       ]
     },
     {
       "id": "10",
-      "name": "Paquete grande de frijoles negros limpios.",
+      "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
       "image": "/products/beans.jpg",
-      "actualPrice": 5.25,
-      "originalPrice": 6.5,
-      "freeShipping": true,
-      "isNew": true,
-      "discountPercentage": 19,
-      "description": "Frijoles negros cubanos de la mejor calidad. Con un sabor que hará vibrar todos los rincones de tu casa",
+      "actualPrice": 7.5,
+      "originalPrice": 9.0,
+      "freeShipping": false,
+      "isNew": false,
+      "discountPercentage": 17,
+      "store": "Mercadito TSO",
+      "brand": "Ikoko",
+      "description": "Frijoles negros cubanos de la mejor calidad...",
+      "categoryIds": ["cat-1", "cat-8"],
+      "addedDate": "2025-03-28",
       "variations": [
-        { "name": "Pequeño: 4.4Lb.", "inStock": true },
-        { "name": "Mediano: 8.8Lb.", "inStock": true },
-        { "name": "Grande", "inStock": false }
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "/products/beans.jpg"}
       ]
     }
+  ],
+  "categories": [
+    {"id": "cat-1", "name": "alimentos preelaborados"},
+    {"id": "cat-2", "name": "aseo y cuidado personal"},
+    {"id": "cat-3", "name": "bebidas alcohólicas"},
+    {"id": "cat-4", "name": "bebidas no alcohólicas"},
+    {"id": "cat-5", "name": "cakes, helados y dulces"},
+    {"id": "cat-6", "name": "combos"},
+    {"id": "cat-7", "name": "cárnicos"},
+    {"id": "cat-8", "name": "despensa"},
+    {"id": "cat-9", "name": "huevos y lácteos"},
+    {"id": "cat-10", "name": "infantiles y escolares"},
+    {"id": "cat-11", "name": "limpieza y útiles"},
+    {"id": "cat-12", "name": "moda y accesorios"},
+    {"id": "cat-13", "name": "otros congelados"},
+    {"id": "cat-14", "name": "para mascotas"},
+    {"id": "cat-15", "name": "pescados y mariscos"},
+    {"id": "cat-16", "name": "piezas y accesorios"},
+    {"id": "cat-17", "name": "regalos"}
   ]
-  
+}
