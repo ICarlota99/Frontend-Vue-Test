@@ -3,7 +3,7 @@ import { onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import axios from 'axios'
 import type { ProductDetail } from '@/types/product'
-import DetailSkeleton from '@/components/DetailSkeleton.vue'
+import DetailSkeleton from '@/components/skeletons/DetailSkeleton.vue'
 
 const route = useRoute()
 const product = ref<ProductDetail | null>(null)
