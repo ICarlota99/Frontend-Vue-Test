@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { getImageUrl } from '@/utils/helpers'
 defineProps<{
   src: string;
   alt: string;
@@ -12,7 +11,7 @@ defineProps<{
     <!-- Rounded image-->
     <div class="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32">
       <img
-        :src="getImageUrl(src)"
+        :src="src"
         :alt="alt"
         class="rounded-full object-cover w-full h-full border border-gray-600"
       />
