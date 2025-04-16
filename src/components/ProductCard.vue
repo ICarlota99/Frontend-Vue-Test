@@ -1,62 +1,60 @@
 <script setup lang="ts">
-  import { ref } from 'vue'
-  import { useRouter } from 'vue-router'
-  import { useProductStore } from '@/store/productStore'
-  import { useCartStore } from '@/store/cart'
-  import VariationModal from '@/components/VariationModal.vue'
-  import type { Product } from '@/types/product'
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+import { useCartStore } from '@/store/cart'
+import type { Product } from '@/types/product'
 
-  // Props
-  const props = defineProps<{ product: Product }>()
+// Props
+const props = defineProps<{ product: Product }>()
 
-  // State
-  const quantity = ref(1)
-  const modalVisible = ref(false)
+// State
+const quantity = ref(1)
+const showAlert = ref(false)
 
-  const productStore = useProductStore()
-  const cart = useCartStore()
-  const router = useRouter()
+const cart = useCartStore()
+const router = useRouter()
 
-  // Handlers
-  const handleAdd = (variationName: string, qty: number) => {
-    cart.addToCart(
-      { ...props.product, name: `${props.product.name} (${variationName})` },
-      qty
-    )
-  }
+// Handlers
+const handleAdd = (qty: number) => {
+  // Select 1st variation
+  const variationName = props.product.variations?.[0]?.name || 'Default Variation'
 
-  const increment = () => quantity.value++
-  const decrement = () => { if (quantity.value > 1) quantity.value-- }
-
-  const goToDetails = () => {
-    router.push({
-      name: 'ProductDetailView',
-      params: { id: props.product.id }
-    })
-  }
-
-  // Open modal
-  const openModal = async (e: Event) => {
-    e.stopPropagation()
-    
-    // Verificar si ya está en caché
-    if (!productStore.getCachedProductDetails(props.product.id)) {
-      await productStore.fetchProductDetails(props.product.id)
-    }
-    
-    modalVisible.value = true
-  }
-  const closeModal = () => {
-  modalVisible.value = false
-  productStore.clearProductDetails()
+  cart.addToCart(
+    { ...props.product, name: `${props.product.name} (${variationName})` },
+    qty
+  )
 }
 
+// Handle quantities and alerts
+const increment = () => {
+  showAlert.value = false
+  quantity.value++
+}
+
+const decrement = () => {
+  if (quantity.value > 1) {
+    quantity.value--
+    showAlert.value = false
+  } else {
+    showAlert.value = true
+    setTimeout(() => {
+      showAlert.value = false
+    }, 3000)
+  }
+}
+
+const goToDetails = () => {
+  router.push({
+    name: 'ProductDetailView',
+    params: { id: props.product.id }
+  })
+}
 </script>
 
 <template>
   <div 
     @click="goToDetails" 
-    class="cursor-pointer relative hover:scale-[1.03] hover:shadow-md duration-500"
+    class="cursor-pointer relative hover:scale-[1.03] hover:shadow-md duration-300"
   >
     <!-- Actual Product Card -->
     <div v-if="product" class="bg-white rounded-xl border border-gray-200 shadow-sm p-3 flex flex-row md:flex-col gap-4 h-full relative">
@@ -126,30 +124,33 @@
         <!-- Quantity Selector + Add to Cart -->
         <div class="flex items-center gap-2 mt-4 pt-2 border-t border-gray-100">
           <div class="flex items-center border rounded-md text-sm z-10">
-            <button @click.stop="decrement" class="px-1 py-1 hover:bg-gray-100">−</button>
+            <button 
+              @click.stop="decrement"
+              :class="{
+                'bg-gray-300': quantity === 1, // Light gray when quantity is 1
+                'hover:bg-gray-100': quantity > 1
+              }"
+              class="px-1 py-1"
+            >
+              −
+            </button>
             <span class="px-3">{{ quantity }}</span>
             <button @click.stop="increment" class="px-1 py-1 hover:bg-gray-100">+</button>
           </div>
           <button
-            @click.stop="openModal"
+            @click.stop="handleAdd(quantity)"
             class="flex-1 flex items-center justify-center gap-1 bg-amber-200 hover:bg-amber-300 text-amber-950 font-semibold p-1.5 rounded-md text-sm"
           >
             <i class="pi pi-shopping-cart"></i>
             Añadir
           </button>
         </div>
+        <!-- Alert shown below the card -->
+        <div v-if="showAlert" class="mt-2 text-sm text-amber-900 bg-amber-100 rounded-md px-3 py-1 absolute bottom-0 z-10 max-widht-1/2">
+          <i class="pi pi-info-circle pe-2"></i>  
+          <span> Cantidad mínima para este producto</span>
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- Variation modal -->
-  <VariationModal
-    v-if="productStore.productDetails && product"
-    :key="productStore.productDetails.id"
-    :visible="modalVisible"
-    :product="productStore.productDetails"
-    :quantity="quantity"
-    @close="closeModal"
-    @add="handleAdd"
-  />
 </template>
