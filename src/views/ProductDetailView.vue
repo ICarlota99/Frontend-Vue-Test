@@ -3,7 +3,7 @@ import { useRoute } from 'vue-router'
 import { onMounted } from 'vue'
 import { useProductStore } from '@/store/productStore'
 import ProductDetail from '@/components/ProductDetail.vue'
-import DetailSkeleton from '@/components/DetailSkeleton.vue'
+import DetailSkeleton from '@/components/skeletons/DetailSkeleton.vue'
 
 const route = useRoute()
 const store = useProductStore()
