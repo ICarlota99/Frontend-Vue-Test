@@ -1,29 +1,36 @@
 <script setup lang="ts">
 // Import Vue composition utilities and type definitions
-import { defineProps, onMounted, ref, computed } from 'vue';
-import type { Category, Product } from '@/types/product';
+import { onMounted, ref, computed } from 'vue';
+import type { Category, Product, ProductDetail } from '@/types/product';
+import { useCategoryStore} from '@/store/categoryStore';
+import { useProductStore } from '@/store/productStore';
 
 // Import components used in the template
 import ProductCard from './ProductCard.vue';
 import RoundImage from './RoundImage.vue';
 import AllProductsLink from '@/components/AllProductsLink.vue';
+import RoundImageSkeleton from './skeletons/RoundImageSkeleton.vue';
+import CardSkeleton from './skeletons/CardSkeleton.vue';
+
+const categoryStore = useCategoryStore();
+const productStore = useProductStore();
 
 // Define props passed to this component
 const props = defineProps<{
   isCategoryView: boolean;
-  categories: Category[];
-  products: Product[];
+  products?: Product[] | ProductDetail[];
   title: string;
 }>();
 
 // Groups categories into subarrays of 2 elements (for row layout)
 const chunkedCategories = computed(() => {
   const result: Category[][] = [];
-  for (let i = 0; i < props.categories.length; i += 2) {
-    result.push(props.categories.slice(i, i + 2));
+  for (let i = 0; i < categoryStore.categories.length; i += 2) {
+    result.push(categoryStore.categories.slice(i, i + 2));
   }
   return result;
 });
+
 
 // Reference to the horizontally scrollable container
 const scrollRef = ref<HTMLElement | null>(null);
@@ -69,25 +76,20 @@ const setupDragScroll = (el: HTMLElement) => {
 // Initialize the drag-to-scroll when the component mounts
 onMounted(() => {
   if (scrollRef.value) setupDragScroll(scrollRef.value);
+  categoryStore.fetchCategories();
 });
 </script>
 
-
 <template>
-    <div class="py-12">
-      <!-- Categories -->
-      <div v-if="isCategoryView">
-        <div ref="scrollRef" class="overflow-x-auto pb-2 cursor-grab">
-            <div class="flex flex-nowrap gap-0 lg:gap-24 w-max px-0 lg:px-6 xl:px-32 2xl:px-64">
-            <div
-              v-for="(group, index) in chunkedCategories"
-              :key="index"
-            >
-              <div
-                v-for="category in group"
-                :key="category.id"
-                class="w-25 flex-shrink-0"
-              >
+  <div class="py-12">
+    <!-- Categories -->
+    <div v-if="isCategoryView">
+      <div ref="scrollRef" class="overflow-x-auto pb-2 cursor-grab">
+        <div class="flex flex-nowrap gap-0 lg:gap-24 w-max px-0 lg:px-6 xl:px-32 2xl:px-64">
+          <template v-if="categoryStore.categories.length">
+            <!-- Show categories once loaded -->
+            <div v-for="(group, index) in chunkedCategories" :key="index">
+              <div v-for="category in group" :key="category.id" class="w-25 flex-shrink-0">
                 <RoundImage
                   :src="category.image"
                   :alt="category.name"
@@ -95,18 +97,37 @@ onMounted(() => {
                 />
               </div>
             </div>
-          </div>
+          </template>
+
+          <template v-else>
+             <!-- Show skeletons if loading -->
+             <div
+              v-for="index in 6"
+              :key="'cat-skeleton-group-' + index"
+            >
+              <div
+                v-for="i in 2"
+                :key="'cat-skeleton-' + index + '-' + i"
+                class="w-25 flex-shrink-0"
+              >
+                <RoundImageSkeleton />
+              </div>
+            </div>
+          </template>
         </div>
-        <AllProductsLink />
       </div>
-  
-      <!-- Products -->
-      <div v-else class="space-y-6">
-        <h1 class="text-3xl font-bold text-gray-800 py-6 text-center lg:text-left px-4 lg:px-6 xl:px-32 2xl:px-64">
-          {{ title }}
-        </h1>
-        <div ref="scrollRef" class="overflow-x-auto pb-2 cursor-grab">
-          <div class="flex flex-nowrap gap-4 w-max px-4 lg:px-6 xl:px-32 2xl:px-64">
+      <AllProductsLink />
+    </div>
+
+    <!-- Products -->
+    <div v-else class="space-y-6">
+      <h1 class="text-3xl font-bold text-gray-800 py-6 text-center lg:text-left px-4 lg:px-6 xl:px-32 2xl:px-64">
+        {{ title }}
+      </h1>
+      <div ref="scrollRef" class="overflow-x-auto pb-2 cursor-grab">
+        <div class="flex flex-nowrap gap-4 w-max px-4 lg:px-6 xl:px-32 2xl:px-64">
+          <!-- Products -->
+          <template v-if="productStore.products.length">
             <div
               v-for="product in products"
               :key="product.id"
@@ -114,9 +135,22 @@ onMounted(() => {
             >
               <ProductCard :product="product" />
             </div>
-          </div>
+          </template>
+
+          <!-- Card Skeleton -->
+          <template v-else>
+            <div
+              v-for="index in 6"
+              :key="'product-skeleton-' + index"
+              class="w-90 flex-shrink-0"
+            >
+              <CardSkeleton />
+            </div>
+          </template>
         </div>
       </div>
     </div>
+  </div>
 </template>
+
   
