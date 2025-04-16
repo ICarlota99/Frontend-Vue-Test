@@ -11,6 +11,7 @@ const store = useProductStore()
 
 onMounted(async () => {
   await store.fetchProductDetails(route.params.id.toString())
+  await store.fetchProducts() // Needs to implement a fetchRelatedProducts function
 })
 </script>
 
@@ -25,5 +26,5 @@ onMounted(async () => {
       <DetailSkeleton />
     </div>
   </div>
-  <ScrollingGrid title="Productos similares" :isCategoryView="false" :categories="[]" :products="store.products" class="bg-gray-100 py-16"/>
+  <ScrollingGrid title="Productos similares" :isCategoryView="false" :products="store.products" class="bg-gray-100 py-16"/>
 </template>
