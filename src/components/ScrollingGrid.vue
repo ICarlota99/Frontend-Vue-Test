@@ -1,10 +1,14 @@
 <script setup lang="ts">
+// Import Vue composition utilities and type definitions
 import { defineProps, onMounted, ref, computed } from 'vue';
 import type { Category, Product } from '@/types/product';
+
+// Import components used in the template
 import ProductCard from './ProductCard.vue';
 import RoundImage from './RoundImage.vue';
 import AllProductsLink from '@/components/AllProductsLink.vue';
 
+// Define props passed to this component
 const props = defineProps<{
   isCategoryView: boolean;
   categories: Category[];
@@ -12,6 +16,7 @@ const props = defineProps<{
   title: string;
 }>();
 
+// Groups categories into subarrays of 2 elements (for row layout)
 const chunkedCategories = computed(() => {
   const result: Category[][] = [];
   for (let i = 0; i < props.categories.length; i += 2) {
@@ -20,13 +25,16 @@ const chunkedCategories = computed(() => {
   return result;
 });
 
+// Reference to the horizontally scrollable container
 const scrollRef = ref<HTMLElement | null>(null);
 
+// Enables drag-to-scroll behavior for horizontal scrolling
 const setupDragScroll = (el: HTMLElement) => {
   let isDown = false;
   let startX = 0;
   let scrollLeft = 0;
 
+  // Called on drag start
   const start = (e: MouseEvent | TouchEvent) => {
     isDown = true;
     startX = 'touches' in e ? e.touches[0].pageX : e.pageX;
@@ -34,6 +42,7 @@ const setupDragScroll = (el: HTMLElement) => {
     el.classList.add('cursor-grabbing');
   };
 
+  // Called during drag
   const move = (e: MouseEvent | TouchEvent) => {
     if (!isDown) return;
     const x = 'touches' in e ? e.touches[0].pageX : e.pageX;
@@ -41,11 +50,13 @@ const setupDragScroll = (el: HTMLElement) => {
     el.scrollLeft = scrollLeft - walk;
   };
 
+  // Called when drag ends
   const stop = () => {
     isDown = false;
     el.classList.remove('cursor-grabbing');
   };
 
+  // Attach event listeners for mouse and touch events
   el.addEventListener('mousedown', start);
   el.addEventListener('touchstart', start, { passive: true });
   el.addEventListener('mousemove', move);
@@ -55,10 +66,12 @@ const setupDragScroll = (el: HTMLElement) => {
   el.addEventListener('touchend', stop);
 };
 
+// Initialize the drag-to-scroll when the component mounts
 onMounted(() => {
   if (scrollRef.value) setupDragScroll(scrollRef.value);
 });
 </script>
+
 
 <template>
     <div class="py-12">
@@ -73,7 +86,7 @@ onMounted(() => {
               <div
                 v-for="category in group"
                 :key="category.id"
-                class="w-35 md:w-50 lg:w-60 flex-shrink-0"
+                class="w-25 flex-shrink-0"
               >
                 <RoundImage
                   :src="category.image"

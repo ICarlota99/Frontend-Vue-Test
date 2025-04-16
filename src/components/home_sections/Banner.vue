@@ -3,6 +3,7 @@
 </script>
 
 <template>
+  <!-- Middle banner image -->
       <div class="relative w-full overflow-hidden">
         <div class="flex w-full h-auto transition-transform duration-500">
             <!-- Banner -->

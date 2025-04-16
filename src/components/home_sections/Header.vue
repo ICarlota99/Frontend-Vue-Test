@@ -9,7 +9,7 @@ const cartCount = ref(0);
 <template>
     <nav class="w-full z-50">
       <div>
-        <!-- Barra unificada para pantallas grandes (lg) -->
+        <!-- Unified navbar in larger screens (lg) -->
         <div class="lg:flex lg:justify-between lg:items-center lg:px-24 lg:py-2 lg:gap-4 hidden">
           <!-- Logo y ubicación -->
           <div class="flex items-center gap-4 lg:order-1">
@@ -23,7 +23,7 @@ const cartCount = ref(0);
             </div>
           </div>
 
-          <!-- Buscador -->
+          <!-- Search bar -->
           <div class="lg:flex lg:items-center lg:flex-1 lg:max-w-2xl lg:order-2">
             <div class="flex items-center gap-2 w-full">
               <input
@@ -38,7 +38,7 @@ const cartCount = ref(0);
             </div>
           </div>
 
-          <!-- Selector de moneda -->
+          <!-- Currency selector -->
           <div class="lg:block lg:order-3">
             <select v-model="selectedCurrency" class="bg-transparent border rounded px-2 py-1">
               <option value="USD">USD</option>
@@ -49,7 +49,7 @@ const cartCount = ref(0);
           </div>
         </div>
 
-        <!-- Versión mobile/tablet (md y sm) -->
+        <!-- Mobile/tablet version (md y sm) -->
         <div class="lg:hidden">
           <!-- Top Bar -->
           <div class="flex justify-between items-center px-4 py-2">
@@ -60,12 +60,12 @@ const cartCount = ref(0);
             </select>
           </div>
 
-          <!-- Barra combinada de ubicación y búsqueda -->
+          <!-- Combined navbar -->
           <div class="flex items-center gap-2 px-4 py-2">
             <!-- Icono de ubicación -->
             <i class="pi pi-map-marker bg-amber-200 text-amber-950 p-2 rounded-full flex-shrink-0"></i>
             
-            <!-- Buscador -->
+            <!-- Search bar -->
             <div class="flex-1 flex items-center gap-2">
               <input
                 type="text"

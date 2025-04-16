@@ -3,6 +3,7 @@
 </script>
 
 <template>
+  <!-- Display shipping features as a section -->
   <section class="bg-white py-24">
     <div class="max-w-7xl mx-auto px-4">
       <div class="text-center mb-12">

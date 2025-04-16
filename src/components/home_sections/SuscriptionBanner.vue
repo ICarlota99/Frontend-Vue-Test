@@ -1,5 +1,6 @@
 <script setup lang="ts"></script>
 <template>
+  <!-- Suscription email form  -->
     <section class="bg-gradient-to-r from-gray-200 via-white to-amber-200 py-20 flex justify-center items-center">
       <div class="bg-white p-8 rounded shadow-md text-center max-w-3xl w-full">
         <h2 class="text-4xl font-bold text-amber-600 mb-2">Suscríbete a nuestro boletín</h2>

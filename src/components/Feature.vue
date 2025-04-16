@@ -7,6 +7,7 @@ defineProps<{
 </script>
 
 <template>
+  <!-- Display shipping feature -->
   <div class="flex flex-col items-center text-center px-4">
     <div class="bg-yellow-100 rounded-full w-24 h-24 flex items-center justify-center mb-4">
       <i :class="`pi ${icon} text-amber-700 text-5xl`" />
