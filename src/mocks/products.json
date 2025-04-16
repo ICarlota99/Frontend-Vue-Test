@@ -3,26 +3,37 @@
     {
       "id": "1",
       "name": "Helado Ikoko (4Lt)",
-      "image": "products/ice-cream.webp",
-      "actualPrice": 3.40,
-      "originalPrice": 5.50,
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/ice-cream.webp",
+      "actualPrice": 3.4,
+      "originalPrice": 5.5,
       "freeShipping": true,
       "isNew": true,
       "discountPercentage": 29,
       "store": "Mercadito TSO",
       "brand": "Ikoko",
       "description": "Sumérgete en un placer cremoso con nuestro helado Ikoko. Deliciosamente rico y perfectamente suave, es el capricho perfecto para satisfacer tus antojos dulces.",
-      "categoryIds": ["cat-1", "cat-5"],
+      "categoryIds": [
+        "cat-1",
+        "cat-5"
+      ],
       "addedDate": "2025-04-01",
       "variations": [
-        {"name": "Chocolate", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/ice-cream.webp"},
-        {"name": "Fresa", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/ice-cream.webp"}
+        {
+          "name": "Chocolate",
+          "inStock": true,
+          "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/ice-cream.webp"
+        },
+        {
+          "name": "Fresa",
+          "inStock": true,
+          "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/ice-cream.webp"
+        }
       ]
     },
     {
       "id": "2",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -31,16 +42,23 @@
       "store": "Mercadito TSO",
       "brand": "Ikoko",
       "description": "Frijoles negros cubanos de la mejor calidad...",
-      "categoryIds": ["cat-1", "cat-8"],
+      "categoryIds": [
+        "cat-1",
+        "cat-8"
+      ],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
+        {
+          "name": "Pequeño: 4.4Lb.",
+          "inStock": true,
+          "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+        }
       ]
     },
     {
       "id": "3",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -49,16 +67,23 @@
       "store": "Mercadito TSO",
       "brand": "Ikoko",
       "description": "Frijoles negros cubanos de la mejor calidad...",
-      "categoryIds": ["cat-1", "cat-8"],
+      "categoryIds": [
+        "cat-1",
+        "cat-8"
+      ],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
+        {
+          "name": "Pequeño: 4.4Lb.",
+          "inStock": true,
+          "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+        }
       ]
     },
     {
       "id": "4",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -67,16 +92,23 @@
       "store": "Mercadito TSO",
       "brand": "Ikoko",
       "description": "Frijoles negros cubanos de la mejor calidad...",
-      "categoryIds": ["cat-1", "cat-8"],
+      "categoryIds": [
+        "cat-1",
+        "cat-8"
+      ],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
+        {
+          "name": "Pequeño: 4.4Lb.",
+          "inStock": true,
+          "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+        }
       ]
     },
     {
       "id": "5",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -85,16 +117,23 @@
       "store": "Mercadito TSO",
       "brand": "Ikoko",
       "description": "Frijoles negros cubanos de la mejor calidad...",
-      "categoryIds": ["cat-1", "cat-8"],
+      "categoryIds": [
+        "cat-1",
+        "cat-8"
+      ],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
+        {
+          "name": "Pequeño: 4.4Lb.",
+          "inStock": true,
+          "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+        }
       ]
     },
     {
       "id": "6",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -103,16 +142,23 @@
       "store": "Mercadito TSO",
       "brand": "Ikoko",
       "description": "Frijoles negros cubanos de la mejor calidad...",
-      "categoryIds": ["cat-1", "cat-8"],
+      "categoryIds": [
+        "cat-1",
+        "cat-8"
+      ],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
+        {
+          "name": "Pequeño: 4.4Lb.",
+          "inStock": true,
+          "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+        }
       ]
     },
     {
       "id": "7",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -121,16 +167,23 @@
       "store": "Mercadito TSO",
       "brand": "Ikoko",
       "description": "Frijoles negros cubanos de la mejor calidad...",
-      "categoryIds": ["cat-1", "cat-8"],
+      "categoryIds": [
+        "cat-1",
+        "cat-8"
+      ],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
+        {
+          "name": "Pequeño: 4.4Lb.",
+          "inStock": true,
+          "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+        }
       ]
     },
     {
       "id": "8",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -139,16 +192,23 @@
       "store": "Mercadito TSO",
       "brand": "Ikoko",
       "description": "Frijoles negros cubanos de la mejor calidad...",
-      "categoryIds": ["cat-1", "cat-8"],
+      "categoryIds": [
+        "cat-1",
+        "cat-8"
+      ],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
+        {
+          "name": "Pequeño: 4.4Lb.",
+          "inStock": true,
+          "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+        }
       ]
     },
     {
       "id": "9",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -157,16 +217,23 @@
       "store": "Mercadito TSO",
       "brand": "Ikoko",
       "description": "Frijoles negros cubanos de la mejor calidad...",
-      "categoryIds": ["cat-1", "cat-8"],
+      "categoryIds": [
+        "cat-1",
+        "cat-8"
+      ],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
+        {
+          "name": "Pequeño: 4.4Lb.",
+          "inStock": true,
+          "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+        }
       ]
     },
     {
       "id": "10",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -175,31 +242,110 @@
       "store": "Mercadito TSO",
       "brand": "Ikoko",
       "description": "Frijoles negros cubanos de la mejor calidad...",
-      "categoryIds": ["cat-1", "cat-8"],
+      "categoryIds": [
+        "cat-1",
+        "cat-8"
+      ],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
+        {
+          "name": "Pequeño: 4.4Lb.",
+          "inStock": true,
+          "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+        }
       ]
     }
   ],
   "categories": [
-    {"id": "cat-1", "name": "alimentos preelaborados", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-2", "name": "aseo y cuidado personal", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-3", "name": "bebidas alcohólicas", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-4", "name": "bebidas no alcohólicas", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-5", "name": "cakes, helados y dulces", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-6", "name": "combos", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-7", "name": "cárnicos", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-8", "name": "de agro", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-9", "name": "despensa", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-10", "name": "huevos y lácteos", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-11", "name": "infantiles y escolares", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-12", "name": "limpieza y útiles", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-13", "name": "moda y accesorios", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-14", "name": "otros congelados", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-15", "name": "para mascotas", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-16", "name": "pescados y mariscos", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-17", "name": "piezas y accesorios", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
-    {"id": "cat-18", "name": "regalos", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
+    {
+      "id": "cat-1",
+      "name": "alimentos preelaborados",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-2",
+      "name": "aseo y cuidado personal",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-3",
+      "name": "bebidas alcohólicas",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-4",
+      "name": "bebidas no alcohólicas",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-5",
+      "name": "cakes, helados y dulces",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-6",
+      "name": "combos",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-7",
+      "name": "cárnicos",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-8",
+      "name": "de agro",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-9",
+      "name": "despensa",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-10",
+      "name": "huevos y lácteos",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-11",
+      "name": "infantiles y escolares",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-12",
+      "name": "limpieza y útiles",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-13",
+      "name": "moda y accesorios",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-14",
+      "name": "otros congelados",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-15",
+      "name": "para mascotas",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-16",
+      "name": "pescados y mariscos",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-17",
+      "name": "piezas y accesorios",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    },
+    {
+      "id": "cat-18",
+      "name": "regalos",
+      "image": "https://raw.githubusercontent.com/ICarlota99/Frontend-Vue-Test/refs/heads/master/public/products/beans.jpg"
+    }
   ]
 }
