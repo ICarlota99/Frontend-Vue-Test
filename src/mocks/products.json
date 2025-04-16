@@ -15,14 +15,14 @@
       "categoryIds": ["cat-1", "cat-5"],
       "addedDate": "2025-04-01",
       "variations": [
-        {"name": "Chocolate", "inStock": true, "image": "products/ice-cream.webp"},
-        {"name": "Fresa", "inStock": true, "image": "products/ice-cream.webp"}
+        {"name": "Chocolate", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/ice-cream.webp"},
+        {"name": "Fresa", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/ice-cream.webp"}
       ]
     },
     {
       "id": "2",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "products/beans.jpg",
+      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -34,13 +34,13 @@
       "categoryIds": ["cat-1", "cat-8"],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "products/beans.jpg"}
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
       ]
     },
     {
       "id": "3",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "products/beans.jpg",
+      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -52,13 +52,13 @@
       "categoryIds": ["cat-1", "cat-8"],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "products/beans.jpg"}
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
       ]
     },
     {
       "id": "4",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "products/beans.jpg",
+      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -70,13 +70,13 @@
       "categoryIds": ["cat-1", "cat-8"],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "products/beans.jpg"}
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
       ]
     },
     {
       "id": "5",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "products/beans.jpg",
+      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -88,13 +88,13 @@
       "categoryIds": ["cat-1", "cat-8"],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "products/beans.jpg"}
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
       ]
     },
     {
       "id": "6",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "products/beans.jpg",
+      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -106,13 +106,13 @@
       "categoryIds": ["cat-1", "cat-8"],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "products/beans.jpg"}
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
       ]
     },
     {
       "id": "7",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "products/beans.jpg",
+      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -124,13 +124,13 @@
       "categoryIds": ["cat-1", "cat-8"],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "products/beans.jpg"}
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
       ]
     },
     {
       "id": "8",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "products/beans.jpg",
+      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -142,13 +142,13 @@
       "categoryIds": ["cat-1", "cat-8"],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "products/beans.jpg"}
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
       ]
     },
     {
       "id": "9",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "products/beans.jpg",
+      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -160,13 +160,13 @@
       "categoryIds": ["cat-1", "cat-8"],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "products/beans.jpg"}
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
       ]
     },
     {
       "id": "10",
       "name": "Paquete grande de frijoles negros limpios 8.8Lb.",
-      "image": "products/beans.jpg",
+      "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg",
       "actualPrice": 7.5,
       "originalPrice": 9.0,
       "freeShipping": false,
@@ -178,28 +178,28 @@
       "categoryIds": ["cat-1", "cat-8"],
       "addedDate": "2025-03-28",
       "variations": [
-        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "products/beans.jpg"}
+        {"name": "Pequeño: 4.4Lb.", "inStock": true, "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
       ]
     }
   ],
   "categories": [
-    {"id": "cat-1", "name": "alimentos preelaborados", "image": "products/beans.jpg"},
-    {"id": "cat-2", "name": "aseo y cuidado personal", "image": "products/beans.jpg"},
-    {"id": "cat-3", "name": "bebidas alcohólicas", "image": "products/beans.jpg"},
-    {"id": "cat-4", "name": "bebidas no alcohólicas", "image": "products/beans.jpg"},
-    {"id": "cat-5", "name": "cakes, helados y dulces", "image": "products/beans.jpg"},
-    {"id": "cat-6", "name": "combos", "image": "products/beans.jpg"},
-    {"id": "cat-7", "name": "cárnicos", "image": "products/beans.jpg"},
-    {"id": "cat-8", "name": "de agro", "image": "products/beans.jpg"},
-    {"id": "cat-9", "name": "despensa", "image": "products/beans.jpg"},
-    {"id": "cat-10", "name": "huevos y lácteos", "image": "products/beans.jpg"},
-    {"id": "cat-11", "name": "infantiles y escolares", "image": "products/beans.jpg"},
-    {"id": "cat-12", "name": "limpieza y útiles", "image": "products/beans.jpg"},
-    {"id": "cat-13", "name": "moda y accesorios", "image": "products/beans.jpg"},
-    {"id": "cat-14", "name": "otros congelados", "image": "products/beans.jpg"},
-    {"id": "cat-15", "name": "para mascotas", "image": "products/beans.jpg"},
-    {"id": "cat-16", "name": "pescados y mariscos", "image": "products/beans.jpg"},
-    {"id": "cat-17", "name": "piezas y accesorios", "image": "products/beans.jpg"},
-    {"id": "cat-18", "name": "regalos", "image": "products/beans.jpg"}
+    {"id": "cat-1", "name": "alimentos preelaborados", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-2", "name": "aseo y cuidado personal", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-3", "name": "bebidas alcohólicas", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-4", "name": "bebidas no alcohólicas", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-5", "name": "cakes, helados y dulces", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-6", "name": "combos", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-7", "name": "cárnicos", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-8", "name": "de agro", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-9", "name": "despensa", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-10", "name": "huevos y lácteos", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-11", "name": "infantiles y escolares", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-12", "name": "limpieza y útiles", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-13", "name": "moda y accesorios", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-14", "name": "otros congelados", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-15", "name": "para mascotas", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-16", "name": "pescados y mariscos", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-17", "name": "piezas y accesorios", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"},
+    {"id": "cat-18", "name": "regalos", "image": "https://github.com/ICarlota99/Frontend-Vue-Test/blob/master/public/products/beans.jpg"}
   ]
 }
