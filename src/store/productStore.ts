@@ -17,7 +17,6 @@ export const useProductStore = defineStore('products', () => {
     try {
       productsLoading.value = true  // Start loading products
       const response = await axios.get('/products/published/web')
-      console.log('API response:', response.data)
       products.value = response.data  // Store fetched products
     } catch (err) {
       error.value = (err as Error).message  // Capture any errors
