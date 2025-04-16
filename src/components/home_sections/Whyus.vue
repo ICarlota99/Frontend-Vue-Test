@@ -7,8 +7,8 @@
   <section class="bg-white py-24">
     <div class="max-w-7xl mx-auto px-4">
       <div class="text-center mb-12">
-        <p class="text-yellow-600 font-semibold text-3xl">Más de 1500 productos en almacén</p>
-        <h2 class="lg:text-8xl md:text-5xl sm:text-xl font-extrabold text-gray-900 m-4 pb-12">Envíos hacia toda Cuba</h2>
+        <p class="text-yellow-600 font-semibold text-2xl">Más de 1500 productos en almacén</p>
+        <h2 class="text-6xl md:text-5xl sm:text-xl font-extrabold text-gray-900 m-4 pb-8">Envíos hacia toda Cuba</h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-24">
