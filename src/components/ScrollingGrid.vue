@@ -65,7 +65,7 @@ onMounted(() => {
       <!-- Categories -->
       <div v-if="isCategoryView">
         <div ref="scrollRef" class="overflow-x-auto pb-2 cursor-grab">
-          <div class="flex flex-nowrap gap-4 w-max px-4 lg:px-6 lg:gap-24 sm:gap-2 xl:px-32 2xl:px-64">
+            <div class="flex flex-nowrap gap-0 lg:gap-24 w-max px-0 lg:px-6 xl:px-32 2xl:px-64">
             <div
               v-for="(group, index) in chunkedCategories"
               :key="index"
@@ -73,7 +73,7 @@ onMounted(() => {
               <div
                 v-for="category in group"
                 :key="category.id"
-                class="w-56 flex-shrink-0"
+                class="w-35 md:w-50 lg:w-60 flex-shrink-0"
               >
                 <RoundImage
                   :src="category.image"
