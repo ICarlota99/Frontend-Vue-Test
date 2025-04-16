@@ -3,7 +3,6 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useCartStore } from '@/store/cart'
 import type { Product } from '@/types/product'
-import { getImageUrl } from '@/utils/helpers'
 
 // Props
 const props = defineProps<{ product: Product }>()
@@ -86,7 +85,7 @@ const goToDetails = () => {
       <!-- Product Image and Store Name -->
       <div class="w-full aspect-square mb-3 relative">
         <img
-          :src="getImageUrl(product.image)"
+          :src="product.image"
           :alt="product.name"
           class="w-full h-full object-contain rounded-lg"
         />
