@@ -30,7 +30,6 @@ const routes: Array<RouteRecordRaw> = [
       transition: 'slide-down',
       requiresAuth: false
     },
-    props: true
   },
   // Add a catch-all route for 404 errors
   {
