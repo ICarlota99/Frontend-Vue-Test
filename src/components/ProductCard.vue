@@ -1,64 +1,57 @@
 <script setup lang="ts">
-import { ref, watchEffect } from 'vue'
-import { useRouter } from 'vue-router'
-import { useProductStore } from '@/store/productStore'
-import type { Product, ProductDetail } from '@/types/product'
-import { useCartStore } from '@/store/cart'
-import VariationModal from '@/components/VariationModal.vue'
+  import { ref } from 'vue'
+  import { useRouter } from 'vue-router'
+  import { useProductStore } from '@/store/productStore'
+  import { useCartStore } from '@/store/cart'
+  import VariationModal from '@/components/VariationModal.vue'
+  import type { Product } from '@/types/product'
 
-// Props
-const props = defineProps<{product: Product}>()
-const product = props.product
+  // Props
+  const props = defineProps<{ product: Product }>()
 
-// State
-const quantity = ref(1)
-const modalVisible = ref(false)
-const productDetails = ref<ProductDetail | null>(null)
-const productStore = useProductStore()
-const router = useRouter()
-const cart = useCartStore()
+  // State
+  const quantity = ref(1)
+  const modalVisible = ref(false)
 
-// Handle adding product to cart
-const handleAdd = (variationName: string, qty: number) => {
-  if (!props.product) return
-  cart.addToCart(
-    { ...product, name: `${product.name} (${variationName})` },
-    qty
-  )
-}
+  const productStore = useProductStore()
+  const cart = useCartStore()
+  const router = useRouter()
 
-const increment = () => quantity.value++
-const decrement = () => { if (quantity.value > 1) quantity.value-- }
+  // Handlers
+  const handleAdd = (variationName: string, qty: number) => {
+    cart.addToCart(
+      { ...props.product, name: `${props.product.name} (${variationName})` },
+      qty
+    )
+  }
 
-const goToDetails = () => {
-  if (!product) return
-  router.push({
-    name: 'ProductDetailView',
-    params: { id: props.product.id }
-  })
-}
+  const increment = () => quantity.value++
+  const decrement = () => { if (quantity.value > 1) quantity.value-- }
 
-const openModal = async (e: Event) => {
-  e.stopPropagation()
-  if (!product) return
+  const goToDetails = () => {
+    router.push({
+      name: 'ProductDetailView',
+      params: { id: props.product.id }
+    })
+  }
 
-  if (!productDetails.value || productDetails.value.id !== product.id) {
-    await productStore.fetchProductDetails(props.product.id)
-    if (productStore.productDetails) {
-      productDetails.value = productStore.productDetails
+  // Open modal
+  const openModal = async (e: Event) => {
+    e.stopPropagation()
+    
+    // Verificar si ya está en caché
+    if (!productStore.getCachedProductDetails(props.product.id)) {
+      await productStore.fetchProductDetails(props.product.id)
     }
+    
+    modalVisible.value = true
   }
-  modalVisible.value = true
+  const closeModal = () => {
+  modalVisible.value = false
+  productStore.clearProductDetails()
 }
 
-watchEffect(() => {
-  if (product) {
-    productDetails.value = null
-  }
-})
 </script>
-
-
 
 <template>
   <div 
@@ -79,7 +72,7 @@ watchEffect(() => {
           v-if="product.isNew"
           class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded-md w-fit"
         >
-          <i class="pi pi-star"></i> <span class="hidden sm:inline">NEW</span>
+          <i class="pi pi-star"></i> <span class="hidden sm:inline">NUEVO</span>
         </span>
       </div>
 
@@ -104,7 +97,7 @@ watchEffect(() => {
       <!-- Product Content (Name, Price, Free Shipping) -->
       <div class="flex flex-col flex-1">
         <div>
-          <h3 class="text-sm font-semibold text-gray-900 leading-tight min-h-[3rem]">
+          <h3 class="font-semibold text-gray-900 leading-tight min-h-[3rem]">
             {{ product.name }}
           </h3>
 
@@ -122,7 +115,7 @@ watchEffect(() => {
               v-if="product.freeShipping"
               class="ml-auto text-xs text-green-600 bg-green-100 px-1 py-0.5 rounded text-center"
             >
-              Free shipping
+              Envío gratis
             </span>
           </div>
         </div>
@@ -139,10 +132,10 @@ watchEffect(() => {
           </div>
           <button
             @click.stop="openModal"
-            class="flex-1 flex items-center justify-center gap-2 bg-amber-200 hover:bg-amber-300 text-amber-950 font-semibold p-1.5 rounded-md text-sm"
+            class="flex-1 flex items-center justify-center gap-1 bg-amber-200 hover:bg-amber-300 text-amber-950 font-semibold p-1.5 rounded-md text-sm"
           >
             <i class="pi pi-shopping-cart"></i>
-            Add to Cart
+            Añadir
           </button>
         </div>
       </div>
@@ -152,10 +145,11 @@ watchEffect(() => {
   <!-- Variation modal -->
   <VariationModal
     v-if="productStore.productDetails && product"
+    :key="productStore.productDetails.id"
     :visible="modalVisible"
     :product="productStore.productDetails"
     :quantity="quantity"
-    @close="modalVisible = false"
+    @close="closeModal"
     @add="handleAdd"
   />
 </template>
