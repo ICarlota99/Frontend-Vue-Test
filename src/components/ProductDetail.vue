@@ -3,6 +3,7 @@ import { onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import axios from 'axios'
 import type { ProductDetail } from '@/types/product'
+import { getImageUrl } from '@/utils/helpers'
 import DetailSkeleton from '@/components/skeletons/DetailSkeleton.vue'
 
 const route = useRoute()
@@ -34,7 +35,7 @@ onMounted(async () => {
       <img
         v-for="variation in product.variations"
         :key="variation.name"
-        :src="variation.image"
+        :src="getImageUrl(variation.image)"
         @click="selectedVariation = variation.name"
         class="w-16 h-16 object-contain border rounded cursor-pointer"
         :class="{ 'ring-2 ring-cyan-600': selectedVariation === variation.name }"
@@ -43,7 +44,11 @@ onMounted(async () => {
     </div>
 
     <!-- Main Image -->
-    <img :src="product.image" alt="Main image" class="max-w-lg w-full object-contain rounded-lg" />
+    <img 
+      :src="getImageUrl(product.image)"
+      alt="Main image" 
+      class="max-w-lg w-full object-contain rounded-lg" 
+    />
 
     <!-- Product Info -->
     <div class="flex-1 space-y-3">
