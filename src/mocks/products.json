@@ -190,15 +190,16 @@
     {"id": "cat-5", "name": "cakes, helados y dulces", "image": "/products/beans.jpg"},
     {"id": "cat-6", "name": "combos", "image": "/products/beans.jpg"},
     {"id": "cat-7", "name": "cárnicos", "image": "/products/beans.jpg"},
-    {"id": "cat-8", "name": "despensa", "image": "/products/beans.jpg"},
-    {"id": "cat-9", "name": "huevos y lácteos", "image": "/products/beans.jpg"},
-    {"id": "cat-10", "name": "infantiles y escolares", "image": "/products/beans.jpg"},
-    {"id": "cat-11", "name": "limpieza y útiles", "image": "/products/beans.jpg"},
-    {"id": "cat-12", "name": "moda y accesorios", "image": "/products/beans.jpg"},
-    {"id": "cat-13", "name": "otros congelados", "image": "/products/beans.jpg"},
-    {"id": "cat-14", "name": "para mascotas", "image": "/products/beans.jpg"},
-    {"id": "cat-15", "name": "pescados y mariscos", "image": "/products/beans.jpg"},
-    {"id": "cat-16", "name": "piezas y accesorios", "image": "/products/beans.jpg"},
-    {"id": "cat-17", "name": "regalos", "image": "/products/beans.jpg"}
+    {"id": "cat-8", "name": "de agro", "image": "/products/beans.jpg"},
+    {"id": "cat-9", "name": "despensa", "image": "/products/beans.jpg"},
+    {"id": "cat-10", "name": "huevos y lácteos", "image": "/products/beans.jpg"},
+    {"id": "cat-11", "name": "infantiles y escolares", "image": "/products/beans.jpg"},
+    {"id": "cat-12", "name": "limpieza y útiles", "image": "/products/beans.jpg"},
+    {"id": "cat-13", "name": "moda y accesorios", "image": "/products/beans.jpg"},
+    {"id": "cat-14", "name": "otros congelados", "image": "/products/beans.jpg"},
+    {"id": "cat-15", "name": "para mascotas", "image": "/products/beans.jpg"},
+    {"id": "cat-16", "name": "pescados y mariscos", "image": "/products/beans.jpg"},
+    {"id": "cat-17", "name": "piezas y accesorios", "image": "/products/beans.jpg"},
+    {"id": "cat-18", "name": "regalos", "image": "/products/beans.jpg"}
   ]
 }
