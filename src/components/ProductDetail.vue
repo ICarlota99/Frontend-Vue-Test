@@ -27,7 +27,7 @@ onMounted(async () => {
 <template>
   <div
     v-if="product"
-    class="flex flex-col lg:flex-row gap-6 p-6 lg:px-12 xl:px-20 2xl:px-24 max-w-6xl mx-auto bg-white rounded-xl shadow-md"
+    class="flex flex-col lg:flex-row gap-6 p-6 lg:px-12 xl:px-20 2xl:px-24 max-w-7xl mx-auto rounded-xl shadow-md bg-white"
   >
     <!-- Thumbnails -->
     <div class="flex lg:flex-col gap-2">
@@ -43,7 +43,7 @@ onMounted(async () => {
     </div>
 
     <!-- Main Image -->
-    <img :src="product.image" alt="Main image" class="max-w-md w-full object-contain rounded-lg" />
+    <img :src="product.image" alt="Main image" class="max-w-lg w-full object-contain rounded-lg" />
 
     <!-- Product Info -->
     <div class="flex-1 space-y-3">
@@ -68,6 +68,20 @@ onMounted(async () => {
       <div class="text-sm text-gray-600">
         Marca: 
         <span class="bg-gray-200 p-1 rounded-md">{{ product.brand }}</span>
+      </div>
+
+      <!-- Data pending to modify according to delivery pricing -->
+      <div>
+        <i class="pi pi-truck text-pink-600"></i> 
+        <p class="font-bold border-r inline-block px-3">
+          3.40 USD
+          <span class="text-gray-700 font-[400]"> / 6 ~ 7 días</span>
+        </p>
+        <p class="inline-block px-3">
+          <span class="text-cyan-800">¡Gratis </span>
+          para más de 
+          <span class="text-cyan-800">24 USD!</span>
+        </p>
       </div>
 
       <div v-if="selectedVariation" class="text-sm text-gray-600">
