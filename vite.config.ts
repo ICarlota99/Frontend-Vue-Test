@@ -13,6 +13,7 @@ export default defineConfig({
     vue(),
     tailwindcss(),
   ],
+  base: "/Frontend-Vue-Test",
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),

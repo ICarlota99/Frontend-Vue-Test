@@ -47,6 +47,7 @@ const router = createRouter({
   routes,
   // Configure scroll behavior
   scrollBehavior(to, from, savedPosition) {
+    void from; // Pending for personalized navigation
     if (savedPosition) {
       return savedPosition
     } else if (to.hash) {

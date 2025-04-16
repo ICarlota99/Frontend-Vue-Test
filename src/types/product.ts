@@ -12,6 +12,7 @@ export interface Product {
   brand: string
   addedDate: string
   variations: ProductVariation[]
+  categoryIds: string[]
 }
 
 // Variation with image and stock info
@@ -24,7 +25,6 @@ export interface ProductVariation {
 // Extended product details interface
 export interface ProductDetail extends Product {
   description: string
-  categoryIds: string[]
 }
 
 export interface Category {

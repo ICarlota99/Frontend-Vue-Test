@@ -83,7 +83,7 @@ onMounted(() => {
 <template>
   <div class="py-12">
     <!-- Categories -->
-    <div v-if="isCategoryView">
+    <div v-if="props.isCategoryView">
       <div ref="scrollRef" class="overflow-x-auto pb-2 cursor-grab">
         <div class="flex flex-nowrap gap-0 lg:gap-24 w-max px-0 lg:px-6 xl:px-32 2xl:px-64">
           <template v-if="categoryStore.categories.length">
