@@ -13,7 +13,7 @@ export default defineConfig({
     vue(),
     tailwindcss(),
   ],
-  base: process.env.NODE_ENV === 'production' ? '/Frontend-Vue-Test/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/Frontend-Vue-Test/' : './',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
