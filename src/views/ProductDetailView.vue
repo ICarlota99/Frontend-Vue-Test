@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-import { onMounted } from 'vue'
+import { onMounted, watch } from 'vue'
 import { useProductStore } from '@/store/productStore'
 import ProductDetail from '@/components/ProductDetail.vue'
 import DetailSkeleton from '@/components/skeletons/DetailSkeleton.vue'
@@ -13,6 +13,14 @@ onMounted(async () => {
   await store.fetchProductDetails(route.params.id.toString())
   await store.fetchProducts() // Needs to implement a fetchRelatedProducts function
 })
+
+// Watch for changes in the route id to fetch the correct product details.
+watch(
+  () => route.params.id,
+  async (newId) => {
+    await store.fetchProductDetails(newId.toString())
+  }
+)
 </script>
 
 <template>
