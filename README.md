@@ -13,7 +13,7 @@ The application’s **homepage** includes multiple sections (it's still incomple
 - A fixed **product grid** that displays 10 product cards in a clean, responsive layout.
 - Reusable components like `ProductCard`, `RoundImage`, `ScrollingGrid`, and `ProductGrid` were built with scalability in mind.
 
-Each product card includes an icon that leads to a **dedicated product detail view** (`/products/:id`). This page displays extended product data, including any available variations.
+Each product card leads to a **dedicated product detail view** (`/products/{id}/details`). This page displays extended product data, including any available variations.
 
 ## 🔌 Mock API
 
