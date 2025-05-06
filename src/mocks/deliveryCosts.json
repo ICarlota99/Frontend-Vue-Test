@@ -1,0 +1,79 @@
+{
+    "location": [
+        {
+            "id": "1",
+            "name": "Arroyo Naranjo",
+            "price": 5
+        },
+        {
+            "id": "2",
+            "name": "Boyeros",
+            "price": 5
+        },
+        {
+            "id": "3",
+            "name": "Centro Habana",
+            "price": 5
+        },
+        {
+            "id": "4",
+            "name": "Cerro",
+            "price": 5
+        },
+        {
+            "id": "5",
+            "name": "Cotorro",
+            "price": 5
+        },
+        {
+            "id": "6",
+            "name": "Diez de Octubre",
+            "price": 5
+        },
+        {
+            "id": "7",
+            "name": "Guanabacoa",
+            "price": 5
+        },
+        {
+            "id": "8",
+            "name": "Habana del Este",
+            "price": 5
+        },
+        {
+            "id": "9",
+            "name": "Habana Vieja",
+            "price": 5
+        },
+        {
+            "id": "10",
+            "name": "La Lisa",
+            "price": 5
+        },
+        {
+            "id": "11",
+            "name": "Marianao",
+            "price": 5
+        },
+        {
+            "id": "12",
+            "name": "Playa",
+            "price": 5
+        },
+        {
+            "id": "13",
+            "name": "Plaza de la Revolución",
+            "price": 5
+        },
+        {
+            "id": "14",
+            "name": "Regla",
+            "price": 5
+        },
+        {
+            "id": "15",
+            "name": "San Miguel del Padrón",
+            "price": 5
+        }
+    ]
+}
