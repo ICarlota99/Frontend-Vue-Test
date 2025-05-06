@@ -21,7 +21,7 @@ onMounted(() => {
   <div class="relative">
     <button 
       @click="isDropdownOpen = !isDropdownOpen"
-      class="flex items-center gap-2 cursor-pointer"
+      class="flex items-center gap-2 cursor-pointer ms-6"
       :disabled="isLoading"
     >
         <i class="pi pi-map-marker bg-amber-200 text-amber-950 p-2 rounded-full"></i>
