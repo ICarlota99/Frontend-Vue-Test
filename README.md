@@ -3,7 +3,7 @@
 This is a frontend project built with **Vue 3 + TypeScript**, simulating a product showcase for an online store. The design was based on a provided Figma prototype, with a focus on responsive layout, clean structure, and good developer practices.
 
 ## 🌐 Check the website at:
-https://icarlota99.github.io/Vue-Market/
+https://icarlota99.github.io/Frontend-Vue-Test/
 
 ## 🧩 What I Built
 
