@@ -2,6 +2,7 @@ import MockAdapter from 'axios-mock-adapter'
 import axios from 'axios'
 import productsJson from './products.json'
 import type { Product, ProductDetail } from '@/types/product.ts'
+import deliveryCosts from './deliveryCosts.json'
 
 const mock = new MockAdapter(axios, { delayResponse: 1000 })
 
@@ -68,4 +69,8 @@ mock.onGet(/\/products\/\d+\/related/).reply(config => {
   
   return [200, relatedProducts]
 })
+
+// Add locations endpoint
+mock.onGet('/delivery-locations').reply(200, deliveryCosts.location)
+
 export default mock
