@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import logo from "/logo.png";
+import DeliveryLocation from "../navbar_components/DeliveryLocation.vue";
 
 const selectedCurrency = ref('USD');
 const cartCount = ref(0);
@@ -14,13 +15,14 @@ const cartCount = ref(0);
           <!-- Logo y ubicación -->
           <div class="flex items-center gap-4 lg:order-1">
             <img :src="logo" alt="TSO Tienda Logo" class="h-8" />
-            <div class="flex items-center gap-2">
+            <DeliveryLocation />
+            <!-- <div class="flex items-center gap-2">
               <i class="pi pi-map-marker bg-amber-200 text-amber-950 p-2 rounded-full"></i>
               <div>
                 <span class="text-xs">Entregar en:</span><br>
                 <span class="text-sm font-medium underline text-amber-950">Arroyo Naranjo</span>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <!-- Search bar -->
