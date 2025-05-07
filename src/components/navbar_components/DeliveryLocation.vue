@@ -21,11 +21,11 @@ onMounted(() => {
   <div class="relative">
     <button 
       @click="isDropdownOpen = !isDropdownOpen"
-      class="flex items-center gap-2 cursor-pointer ms-6"
+      class="flex items-center gap-2 cursor-pointer lg:ms-6"
       :disabled="isLoading"
     >
         <i class="pi pi-map-marker bg-amber-200 text-amber-950 p-2 rounded-full"></i>
-        <div>
+        <div class="hidden lg:block">
             <span class="text-xs">Entregar en:</span><br>
             <span class="text-sm font-medium underline text-amber-950">
             {{ selectedLocation?.name || (isLoading ? 'Cargando...' : 'Seleccionar') }}

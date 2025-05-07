@@ -18,11 +18,10 @@ const links = [
 </script>
 
 <template>
-  <nav class="w-full border-b border-gray-200">
-    <div class="flex justify-between items-center px-6 py-4 lg:justify-center">
+    <div class="lg:justify-center">
       <!-- Toggle icon (visible only on sm and md) -->
       <div class="lg:hidden">
-        <button @click="isOpen = !isOpen">
+        <button @click="isOpen = !isOpen" aria-label="menu button">
           <NavbarIcon icon="bars" name="Menú" />
         </button>
       </div>
@@ -32,7 +31,7 @@ const links = [
         <li v-for="link in links" :key="link.name">
           <RouterLink
             :to="link.path"
-            class="text-gray-700 hover:text-amber-600 font-medium"
+            class="text-gray-700 hover:text-amber-600 font-medium-bold"
             :class="{ 'text-amber-800 font-bold border-b-2 border-amber-800': route.path === link.path }"
           >
             {{ link.name }}
@@ -48,7 +47,7 @@ const links = [
         <li v-for="link in links.filter(link => link.name !== 'Productos' && link.name !== 'Tiendas')" :key="link.name">
           <RouterLink
             :to="link.path"
-            class="block text-gray-700 hover:text-amber-600 font-medium"
+            class="block text-gray-700 hover:text-amber-600 font-medium-bold"
             :class="{ 'text-amber-800 font-bold': route.path === link.path }"
             @click="isOpen = false"
           >
@@ -57,5 +56,4 @@ const links = [
         </li>
       </ul>
     </div>
-  </nav>
 </template>

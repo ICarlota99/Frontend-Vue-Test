@@ -7,7 +7,7 @@
 <template>
     <!-- Currency selector -->
     <div>
-        <select v-model="selectedCurrency" class="bg-transparent border rounded px-2 py-1">
+        <select v-model="selectedCurrency" class="bg-gray-100 rounded p-2" aria-label="currency selector">
             <option value="USD">USD</option>
             <option value="EUR">EUR</option>
         </select>
