@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, computed } from 'vue';
-import { useKeenSlider } from 'keen-slider/vue.es';  // Make sure Keen Slider is imported correctly
-import 'keen-slider/keen-slider.min.css';  // Import Keen Slider CSS
+import { useKeenSlider } from 'keen-slider/vue.es';
+import 'keen-slider/keen-slider.min.css';
 
 import type { Category, Product, ProductDetail } from '@/types/product';
 import { useCategoryStore } from '@/store/categoryStore';
@@ -26,7 +26,7 @@ const props = defineProps<{
 const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
   slides: {
     perView: 'auto',   // Adjusts the number of slides visible at once
-    spacing: 16,       // Space between slides
+    spacing: 0,       // Space between slides
   },
   mode: 'free-snap',    // Enables free snapping mode
   rubberband: true,    // Allows elastic scrolling at the ends
@@ -49,21 +49,21 @@ onUnmounted(() => {
 });
 </script>
 <template>
-  <div class="py-12">
+  <div class="lg:py-12 py-6">
     <!-- Categories -->
     <div v-if="props.isCategoryView">
-      <div ref="sliderRef" class="keen-slider px-0 lg:px-6 xl:px-32 2xl:px-64 pb-2">
+      <div ref="sliderRef" class="keen-slider px-0 md:px-6 lg:px-6 xl:px-32 2xl:px-64 pb-2">
         <template v-if="categoryStore.categories.length">
           <!-- Display categories once loaded -->
           <div
             v-for="(group, index) in chunkedCategories"
             :key="index"
-            class="flex gap-6 flex-col w-fit"
+            class="flex gap-6 flex-col w-fit lg:pr-16 pr-2"
           >
             <div
               v-for="category in group"
               :key="category.id"
-              class="w-40 flex-shrink-0"
+              class="lg:w-40 md:w-32 w-24  flex-shrink-0"
             >
               <RoundImage
                 :src="category.image"
@@ -106,7 +106,7 @@ onUnmounted(() => {
           <div
             v-for="product in products"
             :key="product.id"
-            class="w-60 flex-shrink-0"
+            class="w-60 flex-shrink-0 pr-4"
           >
             <ProductCard :product="product" class="keen-slider__slide" />
           </div>

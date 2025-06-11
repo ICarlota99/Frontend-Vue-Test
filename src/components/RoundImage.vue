@@ -7,9 +7,9 @@ defineProps<{
 </script>
 
 <template>
-  <div class="w-32 md:w-36 lg:w-40 flex flex-col items-center gap-2 p-2">
+  <div class="w-16 h-32 md:w-36 md:h-46 lg:w-60 lg:h-60 flex flex-col items-center gap-2 p-2">
     <!-- Rounded image-->
-    <div class="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32">
+    <div class="w-16 h-16 md:w-28 md:h-28 lg:w-40 lg:h-40">
       <img
         :src="src"
         :alt="alt"
