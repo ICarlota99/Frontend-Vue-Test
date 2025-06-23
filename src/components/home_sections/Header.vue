@@ -7,7 +7,7 @@ import CurrencySelector from "../navbar_components/CurrencySelector.vue";
 import NavbarIcon from "../navbar_components/NavbarIcon.vue";
 import Menu from "../navbar_components/Menu.vue";
 
-const cartCount = ref(0);
+// const cartCount = ref(0);
 const isLargeScreen = ref(false)
 
 const checkScreenSize = () => {
