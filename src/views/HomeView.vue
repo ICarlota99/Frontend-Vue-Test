@@ -8,7 +8,6 @@ import ProductGrid from '@/components/ProductGrid.vue'
 import Banner from '@/components/home_sections/Banner.vue'
 import Whyus from '@/components/home_sections/Whyus.vue'
 import SuscriptionBanner from '@/components/home_sections/SuscriptionBanner.vue'
-// import Contact from '@/components/home_sections/Contact.vue'
 import BannerSkeleton from '@/components/skeletons/BannerSkeleton.vue'
 
 const store = useProductStore()
@@ -32,6 +31,5 @@ onMounted(() => {
   <ScrollingGrid title="Últimos añadidos" :isCategoryView="false" :products="store.products" class="bg-gray-100 py-16"/>
   <Whyus />
   <SuscriptionBanner />
-  <!-- <ScrollingGrid title="Vinculados a tus compras" /> -->
-  <!-- <Contact /> -->
+  <ScrollingGrid title="Vinculados a tus compras" :isCategoryView="false" :products="store.products" class="bg-gray-100 py-16" />
 </template>
