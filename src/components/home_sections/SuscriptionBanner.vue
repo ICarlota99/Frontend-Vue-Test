@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import SuscriptionForm from '../SuscriptionForm.vue'
+</script>
 <template>
   <!-- Suscription email form  -->
     <section class="bg-gradient-to-r from-gray-200 via-white to-amber-200 py-20 flex justify-center items-center">
@@ -7,19 +9,7 @@
         <p class="text-gray-600 mb-6 text-xl">
           Mantente al tanto de todas las novedades, ofertas y descuentos. ¡Suscríbete!
         </p>
-        <form class="flex flex-col sm:flex-row items-center gap-4 pt-8">
-          <input
-            type="email"
-            placeholder="Correo electrónico"
-            class="flex-1 px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-300 text-lg"
-          />
-          <button
-            type="submit"
-            class="px-4 py-2 bg-slate-600 text-white rounded hover:bg-slate-700 transition text-lg"
-          >
-            Suscribirse
-          </button>
-        </form>
+        <SuscriptionForm />
       </div>
     </section>
   </template>
