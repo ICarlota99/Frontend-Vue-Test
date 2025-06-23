@@ -7,7 +7,7 @@ https://icarlota99.github.io/Frontend-Vue-Test/
 
 ## 🧩 What I Built
 
-The application’s **homepage** includes multiple sections (it's still incomplete):
+The application’s **homepage** includes multiple sections:
 
 - A **scrolling grid** with circular icons, allowing horizontal navigation.
 - A fixed **product grid** that displays 10 product cards in a clean, responsive layout.
