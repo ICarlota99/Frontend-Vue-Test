@@ -63,7 +63,7 @@ onUnmounted(() => {
             <div
               v-for="category in group"
               :key="category.id"
-              class="lg:w-40 md:w-32 w-24  flex-shrink-0"
+              class="lg:w-40 md:w-32 w-24 flex-shrink-0"
             >
               <RoundImage
                 :src="category.image"
@@ -106,7 +106,7 @@ onUnmounted(() => {
           <div
             v-for="product in products"
             :key="product.id"
-            class="w-60 flex-shrink-0 pr-4"
+            class="w-100 lg:w-60 md:w-60 flex-shrink-0 pr-4"
           >
             <ProductCard :product="product" class="keen-slider__slide" />
           </div>
@@ -117,7 +117,7 @@ onUnmounted(() => {
           <div
             v-for="index in 6"
             :key="'product-skeleton-' + index"
-            class="w-60 flex-shrink-0"
+            class="w-100 lg:w-60 md:w-60 flex-shrink-0 pr-4"
           >
             <CardSkeleton />
           </div>

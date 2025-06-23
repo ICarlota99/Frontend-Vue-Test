@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Product } from '@/types/product'
+import type { Product } from '@/types/product';
 import { useProductStore } from '@/store/productStore';
-import ProductCard from './ProductCard.vue'
+import ProductCard from './ProductCard.vue';
 import CardSkeleton from './skeletons/CardSkeleton.vue';
 import AllProductsLink from '@/components/AllProductsLink.vue';
 
